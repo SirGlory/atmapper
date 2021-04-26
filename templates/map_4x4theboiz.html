@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_93da79c9eda54df8b64f649d2643259c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_93da79c9eda54df8b64f649d2643259c" ></div>
+        
+</body>
+<script>    
+    
+            var map_93da79c9eda54df8b64f649d2643259c = L.map(
+                "map_93da79c9eda54df8b64f649d2643259c",
+                {
+                    center: [-25.25, 21.2],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_06e9dfe11a754f28919644aed0d415b5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_93da79c9eda54df8b64f649d2643259c);
+        
+    
+            var poly_line_0e93cfe328084677ae528dad2e16e391 = L.polyline(
+                [[-25.999262, 28.125912], [-28.5175205, 20.069182129926723], [-27.6632248, 17.780115582608694], [-27.6101636, 17.6060746], [-26.6500086, 15.157266], [-24.4910839, 15.8032097], [-22.6767841, 14.5313988], [-20.024574, 13.845733], [-20.437824, 14.605991], [-18.9789515, 15.754024793768757], [-18.1168665, 21.6703559]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_93da79c9eda54df8b64f649d2643259c);
+        
+    
+            var marker_cluster_05df3287106f40b6b384c04651b3a14b = L.markerClusterGroup(
+                {}
+            );
+            map_93da79c9eda54df8b64f649d2643259c.addLayer(marker_cluster_05df3287106f40b6b384c04651b3a14b);
+        
+    
+            var marker_4f7d3db6bbcd4351910f6c9cf520c3e4 = L.marker(
+                [-25.999262, 28.125912],
+                {}
+            ).addTo(marker_cluster_05df3287106f40b6b384c04651b3a14b);
+        
+    
+        var popup_7a61a43e28a4426c9cb43f1d400c56b3 = L.popup({"maxWidth": 400});
+
+        
+            var html_a008abbddd504a68a09dbbabeec10ec9 = $(`<div id="html_a008abbddd504a68a09dbbabeec10ec9" style="width: 100.0%; height: 100.0%;">Midrand, Gauteng <br> <a href=https://www.picuki.com/media/2542371069725160604 > See Post</div>`)[0];
+            popup_7a61a43e28a4426c9cb43f1d400c56b3.setContent(html_a008abbddd504a68a09dbbabeec10ec9);
+        
+
+        marker_4f7d3db6bbcd4351910f6c9cf520c3e4.bindPopup(popup_7a61a43e28a4426c9cb43f1d400c56b3)
+        ;
+
+        
+    
+    
+            var marker_e4af6f2209044e1d897c2a5d5b332bd3 = L.marker(
+                [-28.5175205, 20.069182129926723],
+                {}
+            ).addTo(marker_cluster_05df3287106f40b6b384c04651b3a14b);
+        
+    
+        var popup_effec8bd299549f896a6cdb67fc83a71 = L.popup({"maxWidth": 400});
+
+        
+            var html_96aad5e563ac40e1a94a03ad75e64a61 = $(`<div id="html_96aad5e563ac40e1a94a03ad75e64a61" style="width: 100.0%; height: 100.0%;">Augrabies Falls National Park <br> <a href=https://www.picuki.com/media/2546094387794720807 > See Post</div>`)[0];
+            popup_effec8bd299549f896a6cdb67fc83a71.setContent(html_96aad5e563ac40e1a94a03ad75e64a61);
+        
+
+        marker_e4af6f2209044e1d897c2a5d5b332bd3.bindPopup(popup_effec8bd299549f896a6cdb67fc83a71)
+        ;
+
+        
+    
+    
+            var marker_cb5ac0cec2494833a3a60ab96a7800ff = L.marker(
+                [-27.6632248, 17.780115582608694],
+                {}
+            ).addTo(marker_cluster_05df3287106f40b6b384c04651b3a14b);
+        
+    
+        var popup_356d320ea64c426eaa00867db613d4c2 = L.popup({"maxWidth": 400});
+
+        
+            var html_e122612c7c8148c2bcb93ed39333c460 = $(`<div id="html_e122612c7c8148c2bcb93ed39333c460" style="width: 100.0%; height: 100.0%;">Gondwana Cañon Lodge <br> <a href=https://www.picuki.com/media/2547179909287833695 > See Post</div>`)[0];
+            popup_356d320ea64c426eaa00867db613d4c2.setContent(html_e122612c7c8148c2bcb93ed39333c460);
+        
+
+        marker_cb5ac0cec2494833a3a60ab96a7800ff.bindPopup(popup_356d320ea64c426eaa00867db613d4c2)
+        ;
+
+        
+    
+    
+            var marker_2ec72bf6a6bb466bb5b4ee557574018f = L.marker(
+                [-27.6101636, 17.6060746],
+                {}
+            ).addTo(marker_cluster_05df3287106f40b6b384c04651b3a14b);
+        
+    
+        var popup_33721d8d2f634e61bef776d47798cbe6 = L.popup({"maxWidth": 400});
+
+        
+            var html_4c7ab3a44d2442f7ab20c2ac773daaf9 = $(`<div id="html_4c7ab3a44d2442f7ab20c2ac773daaf9" style="width: 100.0%; height: 100.0%;">Fish River Canyon <br> <a href=https://www.picuki.com/media/2548094281115991889 > See Post</div>`)[0];
+            popup_33721d8d2f634e61bef776d47798cbe6.setContent(html_4c7ab3a44d2442f7ab20c2ac773daaf9);
+        
+
+        marker_2ec72bf6a6bb466bb5b4ee557574018f.bindPopup(popup_33721d8d2f634e61bef776d47798cbe6)
+        ;
+
+        
+    
+    
+            var marker_7caabbff90824e68b86a14f618456a35 = L.marker(
+                [-26.6500086, 15.157266],
+                {}
+            ).addTo(marker_cluster_05df3287106f40b6b384c04651b3a14b);
+        
+    
+        var popup_7d2a7870a9f04358837dc1e556b6598c = L.popup({"maxWidth": 400});
+
+        
+            var html_f95a0e56ef624cdf84e1ccc7481c8a7b = $(`<div id="html_f95a0e56ef624cdf84e1ccc7481c8a7b" style="width: 100.0%; height: 100.0%;">Luderitz-NAMIBIA <br> <a href=https://www.picuki.com/media/2548099983087509980 > See Post</div>`)[0];
+            popup_7d2a7870a9f04358837dc1e556b6598c.setContent(html_f95a0e56ef624cdf84e1ccc7481c8a7b);
+        
+
+        marker_7caabbff90824e68b86a14f618456a35.bindPopup(popup_7d2a7870a9f04358837dc1e556b6598c)
+        ;
+
+        
+    
+    
+            var marker_c22fd1b3e14840d099a302097e1405cf = L.marker(
+                [-24.4910839, 15.8032097],
+                {}
+            ).addTo(marker_cluster_05df3287106f40b6b384c04651b3a14b);
+        
+    
+        var popup_782337de661741c5aba818e224bf8fbf = L.popup({"maxWidth": 400});
+
+        
+            var html_100ad41d1ffc40c38b85202c03aea607 = $(`<div id="html_100ad41d1ffc40c38b85202c03aea607" style="width: 100.0%; height: 100.0%;">Sossus Oasis Camp Site,  Namibia <br> <a href=https://www.picuki.com/media/2548828040106835182 > See Post</div>`)[0];
+            popup_782337de661741c5aba818e224bf8fbf.setContent(html_100ad41d1ffc40c38b85202c03aea607);
+        
+
+        marker_c22fd1b3e14840d099a302097e1405cf.bindPopup(popup_782337de661741c5aba818e224bf8fbf)
+        ;
+
+        
+    
+    
+            var marker_780bfdca63a9473a9962327ed3ceb6e9 = L.marker(
+                [-22.6767841, 14.5313988],
+                {}
+            ).addTo(marker_cluster_05df3287106f40b6b384c04651b3a14b);
+        
+    
+        var popup_84df43e85e214795942884bafe21d0b3 = L.popup({"maxWidth": 400});
+
+        
+            var html_aa9ee5cb76b847baba5a4bc2eba16150 = $(`<div id="html_aa9ee5cb76b847baba5a4bc2eba16150" style="width: 100.0%; height: 100.0%;">Swakopmund, Namibia <br> <a href=https://www.picuki.com/media/2551861944002688643 > See Post</div>`)[0];
+            popup_84df43e85e214795942884bafe21d0b3.setContent(html_aa9ee5cb76b847baba5a4bc2eba16150);
+        
+
+        marker_780bfdca63a9473a9962327ed3ceb6e9.bindPopup(popup_84df43e85e214795942884bafe21d0b3)
+        ;
+
+        
+    
+    
+            var marker_34d564f0ebb844d5b31962d98c52bc3e = L.marker(
+                [-20.024574, 13.845733],
+                {}
+            ).addTo(marker_cluster_05df3287106f40b6b384c04651b3a14b);
+        
+    
+        var popup_b97daed584cc490284b06f5943ce815a = L.popup({"maxWidth": 400});
+
+        
+            var html_6d39e3e6b96844eba841ab0334b777ba = $(`<div id="html_6d39e3e6b96844eba841ab0334b777ba" style="width: 100.0%; height: 100.0%;">Desert Rhino Camp <br> <a href=https://www.picuki.com/media/2554613309422540625 > See Post</div>`)[0];
+            popup_b97daed584cc490284b06f5943ce815a.setContent(html_6d39e3e6b96844eba841ab0334b777ba);
+        
+
+        marker_34d564f0ebb844d5b31962d98c52bc3e.bindPopup(popup_b97daed584cc490284b06f5943ce815a)
+        ;
+
+        
+    
+    
+            var marker_9ae2904ef8184b2fbc493d15e949201d = L.marker(
+                [-20.437824, 14.605991],
+                {}
+            ).addTo(marker_cluster_05df3287106f40b6b384c04651b3a14b);
+        
+    
+        var popup_351f014a50b745949f12d0d6adf31c4a = L.popup({"maxWidth": 400});
+
+        
+            var html_7b3b274bdd2f42429c406ab9f7faf4a0 = $(`<div id="html_7b3b274bdd2f42429c406ab9f7faf4a0" style="width: 100.0%; height: 100.0%;">Petrified Forest National Heritage Site <br> <a href=https://www.picuki.com/media/2554635608473270637 > See Post</div>`)[0];
+            popup_351f014a50b745949f12d0d6adf31c4a.setContent(html_7b3b274bdd2f42429c406ab9f7faf4a0);
+        
+
+        marker_9ae2904ef8184b2fbc493d15e949201d.bindPopup(popup_351f014a50b745949f12d0d6adf31c4a)
+        ;
+
+        
+    
+    
+            var marker_a1de9a192b69479fad76b0317f4e92a1 = L.marker(
+                [-18.9789515, 15.754024793768757],
+                {}
+            ).addTo(marker_cluster_05df3287106f40b6b384c04651b3a14b);
+        
+    
+        var popup_9b6df76495214577bc7bd7ce3cbe846a = L.popup({"maxWidth": 400});
+
+        
+            var html_80c374157b3b4599a53acc3ca6ba9ea2 = $(`<div id="html_80c374157b3b4599a53acc3ca6ba9ea2" style="width: 100.0%; height: 100.0%;">Etosha National Park <br> <a href=https://www.picuki.com/media/2555960633641984623 > See Post</div>`)[0];
+            popup_9b6df76495214577bc7bd7ce3cbe846a.setContent(html_80c374157b3b4599a53acc3ca6ba9ea2);
+        
+
+        marker_a1de9a192b69479fad76b0317f4e92a1.bindPopup(popup_9b6df76495214577bc7bd7ce3cbe846a)
+        ;
+
+        
+    
+    
+            var marker_5576acd835074d3cbc574db5f2d65556 = L.marker(
+                [-18.1168665, 21.6703559],
+                {}
+            ).addTo(marker_cluster_05df3287106f40b6b384c04651b3a14b);
+        
+    
+        var popup_ee465cafb6284f9a81f99addd30d280c = L.popup({"maxWidth": 400});
+
+        
+            var html_1eb36851297d4119967ea3fc37ff8129 = $(`<div id="html_1eb36851297d4119967ea3fc37ff8129" style="width: 100.0%; height: 100.0%;">Ngepi Camp <br> <a href=https://www.picuki.com/media/2558806985560367315 > See Post</div>`)[0];
+            popup_ee465cafb6284f9a81f99addd30d280c.setContent(html_1eb36851297d4119967ea3fc37ff8129);
+        
+
+        marker_5576acd835074d3cbc574db5f2d65556.bindPopup(popup_ee465cafb6284f9a81f99addd30d280c)
+        ;
+
+        
+    
+</script>

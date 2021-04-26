@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_02c4b98ff8454c3d8a35664721b818f6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_02c4b98ff8454c3d8a35664721b818f6" ></div>
+        
+</body>
+<script>    
+    
+            var map_02c4b98ff8454c3d8a35664721b818f6 = L.map(
+                "map_02c4b98ff8454c3d8a35664721b818f6",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a721eab3cca6448899be05741de121d3 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_02c4b98ff8454c3d8a35664721b818f6);
+        
+    
+            var marker_cluster_3fe115418198416497073b4b49687373 = L.markerClusterGroup(
+                {}
+            );
+            map_02c4b98ff8454c3d8a35664721b818f6.addLayer(marker_cluster_3fe115418198416497073b4b49687373);
+        
+    
+            var marker_9358a2572301464e9b62620b9db406d9 = L.marker(
+                [46.603354, 1.8883335],
+                {}
+            ).addTo(marker_cluster_3fe115418198416497073b4b49687373);
+        
+    
+        var popup_5533379b12334ec7a63bc4c132cd3493 = L.popup({"maxWidth": 400});
+
+        
+            var html_9c3575ed314f45e3949f663e3a3510e9 = $(`<div id="html_9c3575ed314f45e3949f663e3a3510e9" style="width: 100.0%; height: 100.0%;">France <br> <a href=https://www.picuki.com/media/2553165951797784203 > See Post</div>`)[0];
+            popup_5533379b12334ec7a63bc4c132cd3493.setContent(html_9c3575ed314f45e3949f663e3a3510e9);
+        
+
+        marker_9358a2572301464e9b62620b9db406d9.bindPopup(popup_5533379b12334ec7a63bc4c132cd3493)
+        ;
+
+        
+    
+    
+            var marker_fc725089e7d84cb6ba260651a85b1620 = L.marker(
+                [37.84054795, -119.51658779802511],
+                {}
+            ).addTo(marker_cluster_3fe115418198416497073b4b49687373);
+        
+    
+        var popup_2300ae82380d4fe0bb7aa1ffc0fbee9f = L.popup({"maxWidth": 400});
+
+        
+            var html_96c6b5acb58346b1ba3ef91ad8dc4dd9 = $(`<div id="html_96c6b5acb58346b1ba3ef91ad8dc4dd9" style="width: 100.0%; height: 100.0%;">Yosemite National Park <br> <a href=https://www.picuki.com/media/2553895456640238443 > See Post</div>`)[0];
+            popup_2300ae82380d4fe0bb7aa1ffc0fbee9f.setContent(html_96c6b5acb58346b1ba3ef91ad8dc4dd9);
+        
+
+        marker_fc725089e7d84cb6ba260651a85b1620.bindPopup(popup_2300ae82380d4fe0bb7aa1ffc0fbee9f)
+        ;
+
+        
+    
+    
+            var marker_7d6344af50ab4a1f95b59cc8ea0cb26d = L.marker(
+                [2.8599609, 10.188326285530415],
+                {}
+            ).addTo(marker_cluster_3fe115418198416497073b4b49687373);
+        
+    
+        var popup_fe572c898d8942de8bd213b97e318924 = L.popup({"maxWidth": 400});
+
+        
+            var html_12edafffaa104e8a872d6d05f1c43845 = $(`<div id="html_12edafffaa104e8a872d6d05f1c43845" style="width: 100.0%; height: 100.0%;">The Ocean <br> <a href=https://www.picuki.com/media/2554604841230316813 > See Post</div>`)[0];
+            popup_fe572c898d8942de8bd213b97e318924.setContent(html_12edafffaa104e8a872d6d05f1c43845);
+        
+
+        marker_7d6344af50ab4a1f95b59cc8ea0cb26d.bindPopup(popup_fe572c898d8942de8bd213b97e318924)
+        ;
+
+        
+    
+    
+            var marker_514396f078fe43ab83c1f6d8ce4f0aa0 = L.marker(
+                [46.6634019, -118.2237097],
+                {}
+            ).addTo(marker_cluster_3fe115418198416497073b4b49687373);
+        
+    
+        var popup_eb0a1c081f664d54b99c94366f7d051b = L.popup({"maxWidth": 400});
+
+        
+            var html_00af4d9f856742149dbb8a5d991e3e76 = $(`<div id="html_00af4d9f856742149dbb8a5d991e3e76" style="width: 100.0%; height: 100.0%;">Palouse Falls <br> <a href=https://www.picuki.com/media/2555306486960242141 > See Post</div>`)[0];
+            popup_eb0a1c081f664d54b99c94366f7d051b.setContent(html_00af4d9f856742149dbb8a5d991e3e76);
+        
+
+        marker_514396f078fe43ab83c1f6d8ce4f0aa0.bindPopup(popup_eb0a1c081f664d54b99c94366f7d051b)
+        ;
+
+        
+    
+    
+            var marker_b8df207b742649ada8d80df2c0ebe330 = L.marker(
+                [-19.1421421, 146.83354856403196],
+                {}
+            ).addTo(marker_cluster_3fe115418198416497073b4b49687373);
+        
+    
+        var popup_2312a6f6b5294e35b42a4210de11ade5 = L.popup({"maxWidth": 400});
+
+        
+            var html_8bed21d261244de68bf9864223fa67b5 = $(`<div id="html_8bed21d261244de68bf9864223fa67b5" style="width: 100.0%; height: 100.0%;">Magnetic Island <br> <a href=https://www.picuki.com/media/2556026678048890563 > See Post</div>`)[0];
+            popup_2312a6f6b5294e35b42a4210de11ade5.setContent(html_8bed21d261244de68bf9864223fa67b5);
+        
+
+        marker_b8df207b742649ada8d80df2c0ebe330.bindPopup(popup_2312a6f6b5294e35b42a4210de11ade5)
+        ;
+
+        
+    
+    
+            var marker_fc759318a97342b6878bdbfc8828f75b = L.marker(
+                [36.9009641, 30.6954846],
+                {}
+            ).addTo(marker_cluster_3fe115418198416497073b4b49687373);
+        
+    
+        var popup_7c475ad39e4542c48fe4aadbecf60ce8 = L.popup({"maxWidth": 400});
+
+        
+            var html_9b351224cbd6411c9659efb35ac4c8cb = $(`<div id="html_9b351224cbd6411c9659efb35ac4c8cb" style="width: 100.0%; height: 100.0%;">Antalya, Turkey <br> <a href=https://www.picuki.com/media/2556187933560754900 > See Post</div>`)[0];
+            popup_7c475ad39e4542c48fe4aadbecf60ce8.setContent(html_9b351224cbd6411c9659efb35ac4c8cb);
+        
+
+        marker_fc759318a97342b6878bdbfc8828f75b.bindPopup(popup_7c475ad39e4542c48fe4aadbecf60ce8)
+        ;
+
+        
+    
+    
+            var marker_d8692eda0d524db5845252d578f52bb8 = L.marker(
+                [46.6947208, 12.08582225632518],
+                {}
+            ).addTo(marker_cluster_3fe115418198416497073b4b49687373);
+        
+    
+        var popup_0cc9749920a04c4dbcc5a9c9fdae9cd5 = L.popup({"maxWidth": 400});
+
+        
+            var html_2db1e25c67c64119b276731898b328ba = $(`<div id="html_2db1e25c67c64119b276731898b328ba" style="width: 100.0%; height: 100.0%;">Lago Di Braies <br> <a href=https://www.picuki.com/media/2556926742208308266 > See Post</div>`)[0];
+            popup_0cc9749920a04c4dbcc5a9c9fdae9cd5.setContent(html_2db1e25c67c64119b276731898b328ba);
+        
+
+        marker_d8692eda0d524db5845252d578f52bb8.bindPopup(popup_0cc9749920a04c4dbcc5a9c9fdae9cd5)
+        ;
+
+        
+    
+    
+            var marker_9851dccbb59b49bca4bbb62422e3a7ed = L.marker(
+                [46.5939043, 7.9078016],
+                {}
+            ).addTo(marker_cluster_3fe115418198416497073b4b49687373);
+        
+    
+        var popup_659ad720b7274cd68a23f706f804e5e5 = L.popup({"maxWidth": 400});
+
+        
+            var html_ee9e65ad015d4e60b1cd42d524cbd471 = $(`<div id="html_ee9e65ad015d4e60b1cd42d524cbd471" style="width: 100.0%; height: 100.0%;">Lauterbrunnen, Switzerland <br> <a href=https://www.picuki.com/media/2557486400413244920 > See Post</div>`)[0];
+            popup_659ad720b7274cd68a23f706f804e5e5.setContent(html_ee9e65ad015d4e60b1cd42d524cbd471);
+        
+
+        marker_9851dccbb59b49bca4bbb62422e3a7ed.bindPopup(popup_659ad720b7274cd68a23f706f804e5e5)
+        ;
+
+        
+    
+    
+            var marker_11541e682e2d4f50a028efd88d6e3c0a = L.marker(
+                [21.7214683, -71.6201783],
+                {}
+            ).addTo(marker_cluster_3fe115418198416497073b4b49687373);
+        
+    
+        var popup_71c3dd596492491b916c9f60f0340bec = L.popup({"maxWidth": 400});
+
+        
+            var html_4b02c53a443d42829d17335a0851cf38 = $(`<div id="html_4b02c53a443d42829d17335a0851cf38" style="width: 100.0%; height: 100.0%;">Turks and Caicos Islands <br> <a href=https://www.picuki.com/media/2557628001634659061 > See Post</div>`)[0];
+            popup_71c3dd596492491b916c9f60f0340bec.setContent(html_4b02c53a443d42829d17335a0851cf38);
+        
+
+        marker_11541e682e2d4f50a028efd88d6e3c0a.bindPopup(popup_71c3dd596492491b916c9f60f0340bec)
+        ;
+
+        
+    
+    
+            var marker_f0544efcc1bd48d1ad330ab5f75df639 = L.marker(
+                [41.1018669, -81.1515962],
+                {}
+            ).addTo(marker_cluster_3fe115418198416497073b4b49687373);
+        
+    
+        var popup_f1eea5c2f0c1466683d5941ed9faadb3 = L.popup({"maxWidth": 400});
+
+        
+            var html_b92e3a7ed3c343cdb3f6d77afdef430b = $(`<div id="html_b92e3a7ed3c343cdb3f6d77afdef430b" style="width: 100.0%; height: 100.0%;">Planet Earth <br> <a href=https://www.picuki.com/media/2558235553464398507 > See Post</div>`)[0];
+            popup_f1eea5c2f0c1466683d5941ed9faadb3.setContent(html_b92e3a7ed3c343cdb3f6d77afdef430b);
+        
+
+        marker_f0544efcc1bd48d1ad330ab5f75df639.bindPopup(popup_f1eea5c2f0c1466683d5941ed9faadb3)
+        ;
+
+        
+    
+    
+            var marker_4569eaba9f004c8eaf5ab2f13584942e = L.marker(
+                [38.9953683, 21.9877132],
+                {}
+            ).addTo(marker_cluster_3fe115418198416497073b4b49687373);
+        
+    
+        var popup_bb0b57bafa9d4ad49e00e73c5c6f1323 = L.popup({"maxWidth": 400});
+
+        
+            var html_83a0d536dca54b88bfd184fc58058bc4 = $(`<div id="html_83a0d536dca54b88bfd184fc58058bc4" style="width: 100.0%; height: 100.0%;">Greece <br> <a href=https://www.picuki.com/media/2558346930765998960 > See Post</div>`)[0];
+            popup_bb0b57bafa9d4ad49e00e73c5c6f1323.setContent(html_83a0d536dca54b88bfd184fc58058bc4);
+        
+
+        marker_4569eaba9f004c8eaf5ab2f13584942e.bindPopup(popup_bb0b57bafa9d4ad49e00e73c5c6f1323)
+        ;
+
+        
+    
+    
+            var marker_40e276ac95e349358f2c871ab3cb1598 = L.marker(
+                [19.58726775, -155.42688965312746],
+                {}
+            ).addTo(marker_cluster_3fe115418198416497073b4b49687373);
+        
+    
+        var popup_f01a64b1790646ac8b1101f8d5484234 = L.popup({"maxWidth": 400});
+
+        
+            var html_55623ac20be145a2829f4cd6d3be23be = $(`<div id="html_55623ac20be145a2829f4cd6d3be23be" style="width: 100.0%; height: 100.0%;">Hawaii <br> <a href=https://www.picuki.com/media/2558939160358930464 > See Post</div>`)[0];
+            popup_f01a64b1790646ac8b1101f8d5484234.setContent(html_55623ac20be145a2829f4cd6d3be23be);
+        
+
+        marker_40e276ac95e349358f2c871ab3cb1598.bindPopup(popup_f01a64b1790646ac8b1101f8d5484234)
+        ;
+
+        
+    
+    
+            var marker_2a1bcdf5ba284b7d8d0368b69eb2c318 = L.marker(
+                [45.8900275, -123.9618623],
+                {}
+            ).addTo(marker_cluster_3fe115418198416497073b4b49687373);
+        
+    
+        var popup_68b0a854ca38445885295544e8cf0a48 = L.popup({"maxWidth": 400});
+
+        
+            var html_e2e670d39e6c44278228d83b998fd5b0 = $(`<div id="html_e2e670d39e6c44278228d83b998fd5b0" style="width: 100.0%; height: 100.0%;">Cannon Beach, Oregon <br> <a href=https://www.picuki.com/media/2559098256450019803 > See Post</div>`)[0];
+            popup_68b0a854ca38445885295544e8cf0a48.setContent(html_e2e670d39e6c44278228d83b998fd5b0);
+        
+
+        marker_2a1bcdf5ba284b7d8d0368b69eb2c318.bindPopup(popup_68b0a854ca38445885295544e8cf0a48)
+        ;
+
+        
+    
+    
+            var marker_5139a6d20e8646e0bc9b5c63ef783723 = L.marker(
+                [-2.4833826, 117.8902853],
+                {}
+            ).addTo(marker_cluster_3fe115418198416497073b4b49687373);
+        
+    
+        var popup_d2634603a09843c498625c184d0dfa83 = L.popup({"maxWidth": 400});
+
+        
+            var html_0679e521636c428f9d9c7f1b3cd7490b = $(`<div id="html_0679e521636c428f9d9c7f1b3cd7490b" style="width: 100.0%; height: 100.0%;">Indonesia <br> <a href=https://www.picuki.com/media/2559810193492195671 > See Post</div>`)[0];
+            popup_d2634603a09843c498625c184d0dfa83.setContent(html_0679e521636c428f9d9c7f1b3cd7490b);
+        
+
+        marker_5139a6d20e8646e0bc9b5c63ef783723.bindPopup(popup_d2634603a09843c498625c184d0dfa83)
+        ;
+
+        
+    
+    
+            var marker_5be27e13552e418fb701c288af409ea4 = L.marker(
+                [35.362799, 138.730781],
+                {}
+            ).addTo(marker_cluster_3fe115418198416497073b4b49687373);
+        
+    
+        var popup_2647fb6a5a654bb68b56b3f4ff65931f = L.popup({"maxWidth": 400});
+
+        
+            var html_038b1a2d12b545138c2fe880e21d06ae = $(`<div id="html_038b1a2d12b545138c2fe880e21d06ae" style="width: 100.0%; height: 100.0%;">Mount Fuji <br> <a href=https://www.picuki.com/media/2560422162838424967 > See Post</div>`)[0];
+            popup_2647fb6a5a654bb68b56b3f4ff65931f.setContent(html_038b1a2d12b545138c2fe880e21d06ae);
+        
+
+        marker_5be27e13552e418fb701c288af409ea4.bindPopup(popup_2647fb6a5a654bb68b56b3f4ff65931f)
+        ;
+
+        
+    
+</script>

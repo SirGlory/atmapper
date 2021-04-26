@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_43dfff0ba456437f875276044fba90aa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_43dfff0ba456437f875276044fba90aa" ></div>
+        
+</body>
+<script>    
+    
+            var map_43dfff0ba456437f875276044fba90aa = L.map(
+                "map_43dfff0ba456437f875276044fba90aa",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_576412711cd249abb8138c02a9eacdcf = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_43dfff0ba456437f875276044fba90aa);
+        
+    
+            var marker_cluster_1edd4e83dda1423b96301344fca7790e = L.markerClusterGroup(
+                {}
+            );
+            map_43dfff0ba456437f875276044fba90aa.addLayer(marker_cluster_1edd4e83dda1423b96301344fca7790e);
+        
+    
+            var marker_01c08f73c3dc4478a5fd4da561260371 = L.marker(
+                [33.772179449999996, -116.4952976978508],
+                {}
+            ).addTo(marker_cluster_1edd4e83dda1423b96301344fca7790e);
+        
+    
+        var popup_53360e368a734cbaa0b643240dd30a64 = L.popup({"maxWidth": 400});
+
+        
+            var html_8344c75b75e7485e9439dd0045959bfd = $(`<div id="html_8344c75b75e7485e9439dd0045959bfd" style="width: 100.0%; height: 100.0%;">Palm Springs, California <br> <a href=https://www.picuki.com/media/2340375318101329684 > See Post</div>`)[0];
+            popup_53360e368a734cbaa0b643240dd30a64.setContent(html_8344c75b75e7485e9439dd0045959bfd);
+        
+
+        marker_01c08f73c3dc4478a5fd4da561260371.bindPopup(popup_53360e368a734cbaa0b643240dd30a64)
+        ;
+
+        
+    
+    
+            var marker_063bf277d3a5447cb20ce87fa30ce4d5 = L.marker(
+                [44.9772995, -93.2654692],
+                {}
+            ).addTo(marker_cluster_1edd4e83dda1423b96301344fca7790e);
+        
+    
+        var popup_0d3f5b44ace04e0599556c742ea9b98c = L.popup({"maxWidth": 400});
+
+        
+            var html_09c0942cf47545d7bf46d78d9445a88e = $(`<div id="html_09c0942cf47545d7bf46d78d9445a88e" style="width: 100.0%; height: 100.0%;">Minneapolis, Minnesota <br> <a href=https://www.picuki.com/media/2375662512235832207 > See Post</div>`)[0];
+            popup_0d3f5b44ace04e0599556c742ea9b98c.setContent(html_09c0942cf47545d7bf46d78d9445a88e);
+        
+
+        marker_063bf277d3a5447cb20ce87fa30ce4d5.bindPopup(popup_0d3f5b44ace04e0599556c742ea9b98c)
+        ;
+
+        
+    
+    
+            var marker_8a7a0502e6ed4b7e8fa5985d367fa85d = L.marker(
+                [38.273529, -123.0061118],
+                {}
+            ).addTo(marker_cluster_1edd4e83dda1423b96301344fca7790e);
+        
+    
+        var popup_25cd3b906d714c9783dbc5874af23164 = L.popup({"maxWidth": 400});
+
+        
+            var html_8ac99dbba6964c4ba9fc6075a78e14c3 = $(`<div id="html_8ac99dbba6964c4ba9fc6075a78e14c3" style="width: 100.0%; height: 100.0%;">Bodega Bay, California <br> <a href=https://www.picuki.com/media/2451345615767419614 > See Post</div>`)[0];
+            popup_25cd3b906d714c9783dbc5874af23164.setContent(html_8ac99dbba6964c4ba9fc6075a78e14c3);
+        
+
+        marker_8a7a0502e6ed4b7e8fa5985d367fa85d.bindPopup(popup_25cd3b906d714c9783dbc5874af23164)
+        ;
+
+        
+    
+    
+            var marker_1ab5122d2d46454e84da182b61b36320 = L.marker(
+                [44.4308975, -89.6884637],
+                {}
+            ).addTo(marker_cluster_1edd4e83dda1423b96301344fca7790e);
+        
+    
+        var popup_f7bcebe7ca0d47c187a5f190e6afc3bc = L.popup({"maxWidth": 400});
+
+        
+            var html_8a349c0457fc430e8b760e83ccb22bf3 = $(`<div id="html_8a349c0457fc430e8b760e83ccb22bf3" style="width: 100.0%; height: 100.0%;">Wisconsin <br> <a href=https://www.picuki.com/media/2477373034055615802 > See Post</div>`)[0];
+            popup_f7bcebe7ca0d47c187a5f190e6afc3bc.setContent(html_8a349c0457fc430e8b760e83ccb22bf3);
+        
+
+        marker_1ab5122d2d46454e84da182b61b36320.bindPopup(popup_f7bcebe7ca0d47c187a5f190e6afc3bc)
+        ;
+
+        
+    
+    
+            var marker_42254dcb900d4549a224a08017126a0f = L.marker(
+                [44.9298398, -93.58408932671804],
+                {}
+            ).addTo(marker_cluster_1edd4e83dda1423b96301344fca7790e);
+        
+    
+        var popup_a490f6a0124443e2a3570c432326f228 = L.popup({"maxWidth": 400});
+
+        
+            var html_d1995bd678c94740bdb3503988f2b78c = $(`<div id="html_d1995bd678c94740bdb3503988f2b78c" style="width: 100.0%; height: 100.0%;">Lake Minnetonka <br> <a href=https://www.picuki.com/media/2549156402073878301 > See Post</div>`)[0];
+            popup_a490f6a0124443e2a3570c432326f228.setContent(html_d1995bd678c94740bdb3503988f2b78c);
+        
+
+        marker_42254dcb900d4549a224a08017126a0f.bindPopup(popup_a490f6a0124443e2a3570c432326f228)
+        ;
+
+        
+    
+    
+            var marker_03c318f25753445e92ded782fddbdf6d = L.marker(
+                [45.7087902, -121.5123728],
+                {}
+            ).addTo(marker_cluster_1edd4e83dda1423b96301344fca7790e);
+        
+    
+        var popup_9229f40d8a5343f78d2c6ce412fccfb3 = L.popup({"maxWidth": 400});
+
+        
+            var html_3885c8de4f814683a37f7266c63b5b43 = $(`<div id="html_3885c8de4f814683a37f7266c63b5b43" style="width: 100.0%; height: 100.0%;">Hood River, Oregon <br> <a href=https://www.picuki.com/media/2554271914718093844 > See Post</div>`)[0];
+            popup_9229f40d8a5343f78d2c6ce412fccfb3.setContent(html_3885c8de4f814683a37f7266c63b5b43);
+        
+
+        marker_03c318f25753445e92ded782fddbdf6d.bindPopup(popup_9229f40d8a5343f78d2c6ce412fccfb3)
+        ;
+
+        
+    
+</script>
