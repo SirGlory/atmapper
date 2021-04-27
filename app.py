@@ -69,7 +69,7 @@ def mapgen():
 def about():
     return render_template('about.html')
 
-@app.route('/at_viewer', methods=['GET''])
+@app.route('/at_viewer', methods=['GET'])
 def at_viewer():
     return redirect("https://atviewer.herokuapp.com/")
 
