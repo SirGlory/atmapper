@@ -71,7 +71,7 @@ def about():
 
 @app.route('/at_viewer', methods=['GET', 'POST'])
 def at_viewer():
-    return render_template('at_viewer.html')
+    return redirect("https://atviewer.herokuapp.com/")
 
 @app.route('/explore', methods=['GET', 'POST'])
 def explore():
