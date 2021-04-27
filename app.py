@@ -2,6 +2,7 @@
 from django.contrib import messages
 from flask import Flask, render_template, request, flash, Markup, jsonify
 from flask.views import MethodView
+from werkzeug.utils import redirect
 from wtforms import Form, StringField, SubmitField
 from mapgen import GenMap
 from data_check import DataCheck
@@ -72,6 +73,7 @@ def about():
 @app.route('/at_viewer', methods=['GET'])
 def at_viewer():
     return redirect("https://atviewer.herokuapp.com/")
+
 
 @app.route('/explore', methods=['GET'])
 def explore():
