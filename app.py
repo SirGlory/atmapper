@@ -65,15 +65,15 @@ def mapgen():
 # def handles(handle):
 #   return render_template(f"map_{handle}.html", handle=handle)
 
-@app.route('/about', methods=['GET', 'POST'])
+@app.route('/about', methods=['GET'])
 def about():
     return render_template('about.html')
 
-@app.route('/at_viewer', methods=['GET', 'POST'])
+@app.route('/at_viewer', methods=['GET''])
 def at_viewer():
     return redirect("https://atviewer.herokuapp.com/")
 
-@app.route('/explore', methods=['GET', 'POST'])
+@app.route('/explore', methods=['GET'])
 def explore():
     return render_template('explore.html')
 
