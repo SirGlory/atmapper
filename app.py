@@ -15,6 +15,8 @@ from wtforms.fields import *
 from flask_bootstrap import Bootstrap
 from flask_sqlalchemy import SQLAlchemy
 
+from scrape_last_photos import PhotoUrls
+
 app = Flask(__name__)
 app.secret_key = '420dev710'
 
@@ -70,14 +72,31 @@ def mapgen():
 def about():
     return render_template('about.html')
 
-@app.route('/at_viewer', methods=['GET'])
-def at_viewer():
-    return redirect("https://atviewer.herokuapp.com/")
-
 
 @app.route('/explore', methods=['GET'])
 def explore():
     return render_template('explore.html')
+
+
+@app.route('/at_viewer')
+def at_viewer():
+    form = HandleForm()
+    return render_template('viewer_index.html', form=form)
+
+
+@app.route('/photos', methods=['POST'])
+def photogen():
+    handle_form = HandleForm(request.form)
+    data = str(handle_form.handle.data)
+    print(data)
+    handle = data.replace("@", "").replace(" ", "")  # accounts for @ or space in search field
+    linkss = PhotoUrls(handle=handle).photo_links()
+    #url = "https://www.picuki.com/app/controllers/proxy_image.php?url=https%3A%2F%2Finstagram.flwo4-2.fna.fbcdn.net%2Fv%2Ft51.2885-15%2Fe35%2F177761008_552220862411476_2642127834352225148_n.jpg%3Ftp%3D1%26_nc_ht%3Dinstagram.flwo4-2.fna.fbcdn.net%26_nc_cat%3D104%26_nc_ohc%3Di3mBDruzVloAX8ef9fy%26edm%3DAP_V10EBAAAA%26ccb%3D7-4%26oh%3D0a4015286338ed1145c5e026ab5e9522%26oe%3D60ADC242%26_nc_sid%3D4f375e"
+    url = linkss[0]
+    links = linkss[1:-1]
+    return render_template('viewer_photos.html', images=links, first_image=url)
+    #return render_template('viewer_photos.html', first_image=url)
+
 
 
 
