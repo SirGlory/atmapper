@@ -72,13 +72,17 @@ def mapgen():
 def about():
     return render_template('about.html')
 
+@app.route('/viewerabout', methods=['GET'])
+def viewer_about():
+    return render_template('viewer_about.html')
+
 
 @app.route('/explore', methods=['GET'])
 def explore():
     return render_template('explore.html')
 
 
-@app.route('/at_viewer')
+@app.route('/atviewer')
 def at_viewer():
     form = HandleForm()
     return render_template('viewer_index.html', form=form)
