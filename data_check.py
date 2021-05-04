@@ -35,7 +35,7 @@ class DataCheck:
                         outdated = False
 #____________________________________________________________________________________________________4x4theboiz
                        # Check up to date - 4x4theboiz
-                    elif last_location_data == 'Nxai Pan':
+                    elif last_location_data == 'Moremi Game Reserve':
                         print("4x4thboiz special exception: Database is up to date!")
                         outdated = False
 #____________________________________________________________________________________________________4x4theboiz
