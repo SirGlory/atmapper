@@ -27,7 +27,7 @@ class GenMap:
         elif self.handle == "backpackingtours":
             my_map = Map(location=[10, 100], zoom_start=3)
         elif self.handle == "tony_ontheroad":
-            my_map = Map(location=[38.5, -2.75], zoom_start=6)
+            my_map = Map(location=[39.5, -1.5], zoom_start=6)
         elif self.handle == "rolling_sloane":
             my_map = Map(location=[55, 2.64], zoom_start=4)
         elif self.handle == "cape_secrets":
