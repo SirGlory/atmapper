@@ -33,12 +33,7 @@ class DataCheck:
                     if last_location_data == last_location:
                         print("Database is up to date!")
                         outdated = False
-#____________________________________________________________________________________________________4x4theboiz
-                       # Check up to date - 4x4theboiz
-                    elif last_location_data == 'Moremi Game Reserve':
-                        print("4x4thboiz special exception: Database is up to date!")
-                        outdated = False
-#____________________________________________________________________________________________________4x4theboiz
+
                     else:
                         print("Uh oh! we need to update table")
 
