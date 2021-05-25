@@ -19,9 +19,7 @@ class GenMap:
 
         # Generate map, cluster class and create empty coordinates list
         if self.handle == "4x4theboiz":
-            my_map = Map(location=[-25.25, 21.2], zoom_start=5)
-        elif self.handle == "teampolarsteps":
-            my_map = Map(location=[52.35, 5.3], zoom_start=9)
+            my_map = Map(location=[-10, 25], zoom_start=4)
         elif self.handle == "cityofcapetown":
             my_map = Map(location=[-34.1, 18.420], zoom_start=10)
         elif self.handle == "backpackingtours":
