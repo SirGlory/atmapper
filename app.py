@@ -18,7 +18,7 @@ from flask_sqlalchemy import SQLAlchemy
 from scrape_last_photos import PhotoUrls
 
 app = Flask(__name__)
-app.secret_key = '420dev710'
+app.secret_key = 'devCPT'
 
 #app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///:memory:'
@@ -106,4 +106,4 @@ def photogen():
 
 
 if __name__ == '__main__':
-    app.run(host="localhost", port=8000, debug=True)
+    app.run()
